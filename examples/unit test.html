@@ -51,7 +51,8 @@
 				iframe.style.width = '480px';
 				iframe.style.height = '360px';
 				iframe.style.border = '0px';
-				iframe.src = id//[ 'https://www.youtube.com/embed/', id, '?rel=0' ].join( '' );
+				iframe.src = id
+				//[ 'https://www.youtube.com/embed/', id, '?rel=0' ].join( '' );
 				div.appendChild( iframe );
 
 				const object = new CSS3DObject( div );
@@ -79,12 +80,13 @@
 				container.appendChild( renderer.domElement );
 
 				const group = new THREE.Group();
-				group.add( new Element( 'https://learn.microsoft.com/en-us/training/modules/implement-common-integration-features-finance-ops/10-exercise-1', 0, 0, 240, 0 ) );
+				group.add( new Element( 'https://hahayes.netlify.app/', 0, 0, 240, 0 ) );
 				scene.add( group );
-        var geometry=new THREE.BoxGeometry(1,1,1)
+				
+        /*var geometry=new THREE.BoxGeometry(1,1,1)
         var mesh=new THREE.Mesh(geometry, new MeshBasicMaterial({color:0xdddddd}))
         mesh.position.y-=370
-        scene.add(mesh)
+        scene.add(mesh)*/
 
 				window.addEventListener( 'resize', onWindowResize );
 
