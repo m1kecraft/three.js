@@ -83,9 +83,9 @@ try{
 				group.add( new Element( 'https://labclient.labondemand.com/LabClient/75db1166-aecd-47c9-9dec-add1fae41a1b?rc=10', 0, 0, 240, 0 ) );
 				scene.add( group );
 				
-        var geometry=new THREE.BoxGeometry(1,1,1)
+        var geometry=new THREE.BoxGeometry(100,100,100)
         var mesh=new THREE.Mesh(geometry, new THREE.MeshBasicMaterial({color:0xdddddd}))
-        mesh.position.y-=370
+        mesh.position.set(0,-370,500)
         scene.add(mesh)
 
 				window.addEventListener( 'resize', onWindowResize );
