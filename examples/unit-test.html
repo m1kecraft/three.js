@@ -67,7 +67,7 @@
 			animate();
 
 			function init() {
-
+try{
 				const container = document.getElementById( 'container' );
 
 				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 5000 );
@@ -80,13 +80,13 @@
 				container.appendChild( renderer.domElement );
 
 				const group = new THREE.Group();
-				group.add( new Element( 'https://hahayes.netlify.app/', 0, 0, 240, 0 ) );
+				group.add( new Element( 'https://labclient.labondemand.com/LabClient/75db1166-aecd-47c9-9dec-add1fae41a1b?rc=10', 0, 0, 240, 0 ) );
 				scene.add( group );
 				
-        /*var geometry=new THREE.BoxGeometry(1,1,1)
+        var geometry=new THREE.BoxGeometry(1,1,1)
         var mesh=new THREE.Mesh(geometry, new MeshBasicMaterial({color:0xdddddd}))
         mesh.position.y-=370
-        scene.add(mesh)*/
+        scene.add(mesh)
 
 				window.addEventListener( 'resize', onWindowResize );
 
@@ -96,7 +96,7 @@
 				blocker.style.display = 'none';
 
 				
-
+}catch(e){alert(e)}
 			}
 
 			function onWindowResize() {
